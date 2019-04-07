@@ -5,15 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Home2"
-    tools:showIn="@layout/activity_home2">
+    tools:context=".Game"
+    tools:showIn="@layout/activity_game">
 
-    <Button
-        android:id="@+id/taboo"
-        android:layout_width="157dp"
-        android:layout_height="121dp"
-        android:text="Play Taboo"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="34dp" />
 </android.support.constraint.ConstraintLayout>

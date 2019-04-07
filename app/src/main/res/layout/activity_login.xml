@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Welcome to WordSnap"
+        android:text="Login"
         android:textSize="40sp"
         app:fontFamily="cursive" />
 
@@ -54,9 +54,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@mipmap/ic_launcher_round"
+                android:background="#FFFC00"
+
+                android:drawableRight="@drawable/ic_snapchat_logo"
                 android:text="Login with Snapchat"
                 android:textStyle="bold" />
+            <RelativeLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rules"
+                android:fitsSystemWindows="true">
+            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>

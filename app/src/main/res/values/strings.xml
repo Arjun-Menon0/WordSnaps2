@@ -16,4 +16,14 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login_with_snapchat">Login with Snapchat</string>
+    <string name="welcome_to_wordsnap">Welcome to WordSnap</string>
+    <string name="title_activity_game">Game</string>
+    <string name="title_activity_taboo_categories">tabooCategories</string>
+    <string name="title_activity_celebrities">Celebrities</string>
+    <string name="title_activity_mix">Mix</string>
+    <string name="title_activity_fictional_charatcers">FictionalCharatcers</string>
+    <string name="title_activity_fictional_characters">FictionalCharacters</string>
+    <string name="title_activity_taboos">taboos</string>
+    <string name="title_activity_end_screen">EndScreen</string>
 </resources>

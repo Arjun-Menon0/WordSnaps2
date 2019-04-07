@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wordsnaps">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,68 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Rules"
-            android:label="@string/title_activity_rules"
+            android:name=".EndScreen"
+            android:label="@string/title_activity_end_screen"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Home2"
-            android:label="@string/title_activity_home2"
+            android:name=".taboos"
+            android:label="@string/title_activity_taboos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FictionalCharacters"
+            android:label="@string/title_activity_fictional_characters"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mix"
+            android:label="@string/title_activity_mix"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Celebrities"
+            android:label="@string/title_activity_celebrities"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tabooCategories"
+            android:label="@string/title_activity_taboo_categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Game"
+            android:label="@string/title_activity_game"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.snapchat.kit.sdk.clientId"
+            android:value="f9dd972d-865f-4d83-a764-a5c132bf4f3b" />
+        <meta-data
+            android:name="com.snapchat.kit.sdk.redirectUrl"
+            android:value="myapp://auth/snap" />
+        <meta-data
+            android:name="com.snapchat.kit.sdk.scopes"
+            android:resource="@array/snap_connect_scopes" /> <!-- This should be a string array of scopes ! -->
+        <activity
+            android:name="com.snapchat.kit.sdk.SnapKitActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                    Enter the parts of your redirect url below
+                    e.g., if your redirect url is myapp://snap-kit/oauth2
+                        android:scheme="myapp"
+                        android:host="abc"
+                        android:path="/xy/z"
+                !
+                -->
+                <data
+                    android:host="myapp"
+                    android:scheme="auth"
+                    android:path = "/snap"
+                    />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Rules"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
@@ -34,7 +90,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
     </application>
 
 </manifest>
